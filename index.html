@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!-- CSS Normalize -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+    <!-- JQuery -->
+     <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+    
+
+    <!-- Game Section 
+    <p>A baby mallard duck is a:</p>
+    <input type = "radio id" = "multipleChoice" = "question 1" value = ""> <br>
+    <input type = "radio id" = "multipleChoice" = "question 1" value = ""> <br>
+    <input type = "radio id" = "multipleChoice" = "question 1" value = ""> <br>
+    <input type = "radio id" = "multipleChoice" = "question 1" value = ""> <br>
+    <p>Select a maintenance drone:</p>
+
+<div>
+  <input type="radio" id="huey" name="drone" value="huey"
+         checked>
+  <label for="huey">Huey</label>
+</div>
+
+<div>
+  <input type="radio" id="dewey" name="drone" value="dewey">
+  <label for="dewey">Dewey</label>
+</div>
+
+<div>
+    -->
+
+    <div class="container-fluid">
+
+            <!-- TITLE SECTION --> 
+            <div class="jumbotron" id="gameTitle">
+    
+                 <h1>Baby Animals Quiz</h1>
+                 <p>We know what horses and owls are, but what are they called when they're babies? 
+                In this quiz try to select the correct term for the baby animal...before time runs out!
+                 </p>
+                
+            </div>
+            
+            <!-- GAME SECTION -->
+            <div class="row" id="gameSection">
+    
+                <!-- Timer Row -->
+                <div class="row timer"><h1>Time Remaining: 30 seconds</h1></div>
+    
+                <div class="col-md-3" id="spacer"></div>
+    
+    
+                <!-- Start Screen -->
+                <div class="col-md-6 start" id="gameBox startScreen" >
+    
+                    <!-- First Row -->
+                    <div class="row">
+                        
+                        <button type="button" class="btn btn-default btn-lg btn-block" id="startButton"><h1>Start</h1></button>
+    
+                    </div>
+                    
+    
+                </div>
+    
+                <!-- Trivia Game Screen -->
+                <div class="col-md-6 trivia" id="gameBox triviaScreen">
+    
+                    <!-- Question Row -->
+                    <div class="row" id="firstRow questionRow">
+    
+                        <h2 id="questions">This is where the questions will go</h2>
+    
+                    </div>
+    
+                    <!-- Choices Row -->
+                    <div class="row" id="secondRow choicesRow">
+    
+                        <button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-1" value="A">	
+                        </button>
+    
+                        <button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-2" value="B">
+                        </button>
+    
+                        <button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-3" value="C">
+                        </button>
+    
+                        <button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-4" value="D">		
+                        </button>
+                        
+                    </div>
+                    
+                </div>
+    
+                <!-- Answer Screen -->
+                <div class="col-md-6 answer" id="gameBox answerScreen">
+                    
+                    <!-- Answer Row -->
+                    <div class="row" id="firstRow answersRow">
+    
+                        <h2 id="answers">This is where the answers will go</h2>
+                        
+                    </div>
+
+                    <!-- Image Row 
+				    <div class="row" id="secondRow imageRow">
+					
+					<img src="http://fpoimg.com/300x300" class="img-responsive center-block answerImage" id="answerImage" alt="answer">
+
+				    </div> -->
+    
+                </div>
+    
+                <!-- Time's Up Screen -->
+                <div class="col-md-6 timeup" id="gameBox timeupScreen">
+                    
+                    <!-- Time Up Row -->
+                    <div class="row" id="firstRow timeupRow">
+    
+                        <h2 id="timeup">Out of Time!</h2>
+                        
+                    </div>
+    
+                <!-- Results Screen -->
+                <div class="col-md-6 results" id="gameBox resultScreen">
+                    
+                    <!-- Answer Row -->
+                    <div class="row" id="firstRow resultRow">
+    
+                        <h2 id="timeup">Let's see how you did!</h2>
+    
+        
+                        
+                    </div>
+    
+                    <!-- Restart Row -->
+                    <div class="row" id="secondRow restartRow">
+                        
+                        <img src="assets/images/ready.gif" class="img-responsive center-block" id="restartImage" alt="restart">
+                        <button type="button" class="btn btn-default btn-lg btn-block restartBtn" id="restartButton"><h3>Start Again?</h3></button>
+    
+                    </div>
+    
+                </div>
+    
+    </body>
+    <script src="assets/javascript/app.js"></script>
+    </html>
+ 
+    

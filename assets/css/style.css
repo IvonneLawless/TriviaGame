@@ -1,0 +1,51 @@
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    background-image: url("../images/bnw_animals.jpg");
+}
+
+
+div.timer {
+	
+	display: none;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: red
+}
+
+div.start {
+
+	
+	display: block;
+}
+
+div.trivia {
+
+	
+	font-family: 'Luckiest Guy', cursive;
+	display: none;
+	color: black;
+}
+
+div.answer {
+
+	font-family: 'Luckiest Guy', cursive;
+	display: none;
+	color: black;
+	text-align: center;
+}
+
+div.timeup {
+
+	
+	display: none;
+	color: black;
+	text-align: center;
+}
+
+div.results {
+
+	
+	display: none;
+	color: black;
+}
